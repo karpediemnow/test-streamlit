@@ -1,5 +1,5 @@
 import streamlit as st
-import streamlit_authenticator as stauth
+#import streamlit_authenticator as stauth
 
 #https://blog.streamlit.io/streamlit-quests-getting-started-with-streamlit/#:~:text=Streamlit%20Quests%3A%20Getting%20started%20with%20Streamlit%201%20Two,Streamlit%20apps%20in%20the%20Gallery%20...%20Altri%20elementi
 
@@ -18,8 +18,8 @@ def main():
     with tabConfig:
        placeholder = st.empty()
        user_question = placeholder.text_input("Password to hash:")
-       hashed_passwords = stauth.Hasher([user_question]).generate()
-       st.write("\""+hashed_passwords+"\"")          
+       #hashed_passwords = stauth.Hasher([user_question]).generate()
+       #st.write("\""+hashed_passwords+"\"")          
 
 
 
