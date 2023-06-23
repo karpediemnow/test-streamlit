@@ -9,7 +9,7 @@ import streamlit as st
 
 def main():
     st.set_page_config(page_title="Test")
-    tabHome, tabConfig = st.tabs(["🏠 Home", "🛠️ Create Knowledge Base (Embedding)"])
+    tabHome, tabConfig = st.tabs(["🏠 Home", "🛠️ Config"])
     
     with tabHome:
       #st.image('img/Ask_Book_Questions_Workflow.jpg') 
@@ -17,9 +17,9 @@ def main():
 
     with tabConfig:
        placeholder = st.empty()
-       user_question = placeholder.text_input("Password to hash:")
-       #hashed_passwords = stauth.Hasher([user_question]).generate()
-       #st.write("\""+hashed_passwords+"\"")          
+       psw = placeholder.text_input("Password to hash:")
+       #hashed_passwords = stauth.Hasher([psw]).generate()
+       st.write("\""+psw+"\"")          
 
 
 
