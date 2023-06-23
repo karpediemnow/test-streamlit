@@ -19,7 +19,7 @@ def main():
        placeholder = st.empty()
        psw = placeholder.text_input("Password to hash:")
        hashed_passwords = stauth.Hasher([psw]).generate()
-       st.write("\""+psw+"\"")          
+       st.write("\""+hashed_passwords+"\"")          
 
 
 
