@@ -6,6 +6,9 @@ import streamlit as st
 
 #https://blog.streamlit.io/tag/llms/
 
+#https://docs.streamlit.io/streamlit-community-cloud/get-started/deploy-an-app/connect-to-data-sources/secrets-management
+
+#https://docs.streamlit.io/library/api-reference/session-state
 
 def main():
     st.set_page_config(page_title="Test")
